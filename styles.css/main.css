@@ -1,0 +1,46 @@
+.topbar {
+  background-color: #fac100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.topnav a {
+  margin: 0 50px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+  /* PONER LINEA MAS ESTRECHA */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
