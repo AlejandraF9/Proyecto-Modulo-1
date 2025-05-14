@@ -46,24 +46,21 @@
   font-weight: bold;
 }
 
-main {
-  background-color: white;
-}
-
 .hero-section {
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(44, 35, 35);
   margin-top: 5px;
   padding: 60px 0;
 }
 
 .hero-content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .hero-text {
-  position: absolute;
+  position: absolute; /*ELIMINAR SI NO CONSIGO PONER IMAGEN DE FONDO */
   display: flex;
   flex-direction: column;
   color: white;
@@ -74,7 +71,7 @@ main {
 .hero-text h2 {
   font-style: italic;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 60px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -91,50 +88,95 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
-.hero-image img {
-  position: relative;
-  left: 850px;
-  top: 10px;
-}
-
-/* .hero-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-content {
+.hero-image {
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  z-index: 3;
-  gap: 40px;
-}
-
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text {
-  font-size: 2.8em;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.hero-text .highlighted-text {
-  color: #ffc107;
-  font-weight: 700;
-}
-
-.hero-text p {
-  font-size: 1em;
-  color: #ccc;
+  justify-content: flex-end;
+  padding-right: 90px;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
-} */
+}
+
+.statistics {
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 3px solid #cacaca;
+}
+
+.impact {
+  max-width: 200px;
+  flex: 1;
+}
+
+.impact h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.impact p {
+  font-size: 24px;
+}
+
+
+.about-section {
+  padding: 80px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  /* font-family: "Poppins", sans-serif; CONSULTAR SI PUEDO PONER EL TEXTO CON LA MISMA FUENTE DE LOS OTROS*/
+}
+
+.about-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: black;
+}
+
+.about-read {
+  display: inline-block;
+  background-color: #fac100;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.about-read:hover {
+  background-color: #e0ac00;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
