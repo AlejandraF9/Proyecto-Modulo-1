@@ -47,9 +47,12 @@
 }
 
 .hero-section {
-  background-color: rgb(44, 35, 35);
+  /* background-color: rgb(44, 35, 35); */
   margin-top: 5px;
   padding: 60px 0;
+  background-image: url("../Images/Hero.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-content {
@@ -60,7 +63,7 @@
 }
 
 .hero-text {
-  position: absolute; /*ELIMINAR SI NO CONSIGO PONER IMAGEN DE FONDO */
+  position: absolute;
   display: flex;
   flex-direction: column;
   color: white;
@@ -71,11 +74,11 @@
 .hero-text h2 {
   font-style: italic;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 62px;
   font-family: "Poppins", sans-serif;
 }
 
-.highlighted-text {
+.hero-highlighted {
   font-style: italic;
   font-weight: bold;
   color:#fac100;
@@ -84,7 +87,7 @@
 .hero-text p {
   width: 55%;
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -102,13 +105,13 @@
 
 .statistics {
   background-color: #f9f9f9;
-  padding: 100px 20px;
+  padding: 120px 20px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
   gap: 40px;
-  border-bottom: 3px solid #cacaca;
+  border-bottom: 3.5px solid #cacaca;
 }
 
 .impact {
@@ -148,7 +151,7 @@
 
 .about-text h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -159,18 +162,18 @@
   color: black;
 }
 
-.about-read {
+.about-link {
   display: inline-block;
   background-color: #fac100;
   color: white;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 16px 30px;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   transition: background-color 0.3s ease;
 }
 
-.about-read:hover {
+.about-link:hover {
   background-color: #e0ac00;
 }
 
@@ -180,3 +183,235 @@
   justify-content: center;
 }
 
+.mission-section {  /*VER LO QUE SE PUEDA AGRUPAR QUE COINCIDA EN ABOUT-SECTION*/
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mission-text {
+  flex: 1;
+  /* font-family: "Poppins", sans-serif; CONSULTAR SI PUEDO PONER EL TEXTO CON LA MISMA FUENTE DE LOS OTROS*/
+}
+
+.mission-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: black;
+}
+
+.mission-link {
+  display: inline-block;
+  background-color: #fac100;
+  color: white;
+  font-weight: bold;
+  padding: 16px 30px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.mission-link:hover {
+  background-color: #e0ac00;
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-text {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+.icon-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #fac100;
+  border-radius: 50%;
+}
+
+.contact-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.contact-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.contact-text {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-text .highlighted-text {
+  color: #fac100;
+}
+
+form {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-info input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  height: 100px;
+  padding: 15px 40px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  align-content: center;
+  resize: none;
+}
+
+.contact-button {
+  background-color: #fac100;
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #e0ac00;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.subscribe-section {
+  background-color: #d9d9d9;
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.subscribe-content {
+  max-width: 1300px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.subscribe-text {
+  margin-bottom: 30px;
+}
+
+.subscribe-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  border: 2px solid #fac100;
+  border-radius: 4px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.subscribe-form input[type="email"] {
+  background-color: #d9d9d9;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  flex: 1;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #fac100;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #e0ac00;
+}
+
+.subscribe-image {
+  position: absolute;
+  bottom: 90px;
+  right: 5px;
+}
+
+.subscribe-image img {
+  width: 170px;
+  height: auto;
+}
