@@ -1,8 +1,16 @@
+
+
+/* BUSCAR SI FALTA FLEX:1 O WIDTH EN ALGO */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .topbar {
-  background-color: #fac100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fac100;
   padding: 10px 90px;
 }
 
@@ -10,44 +18,36 @@
   width: 80px;
 }
 
+.topnav a,
+.icons,
+.phone {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .topnav a {
   margin: 0 40px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
 }
 
 .topnav a:hover {
   padding-bottom: 5px;
   border-bottom: 3px solid white;
-  /* PONER LINEA MAS ESTRECHA */
 }
 
 .icons {
   display: flex;
   align-items: center;
   gap: 30px;
-  color: white;
-  font-size: 16px;
-}
-
-.icons img {
-  width: 30px;
-  height: 30px;
 }
 
 .phone {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .hero-section {
-  /* background-color: rgb(44, 35, 35); */
   margin-top: 5px;
   padding: 60px 0;
   background-image: url("../Images/Hero.png");
@@ -72,29 +72,27 @@
 }
 
 .hero-text h2 {
+  font-size: 62px;
   font-style: italic;
   font-weight: bold;
-  font-size: 62px;
-  font-family: "Poppins", sans-serif;
 }
 
 .hero-highlighted {
+  color:#fac100;
   font-style: italic;
   font-weight: bold;
-  color:#fac100;
 }
 
 .hero-text p {
   width: 55%;
   font-size: 16px;
   margin-top: 30px;
-  font-family: "Poppins", sans-serif;
 }
 
 .hero-image {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
+  flex: 1;
   padding-right: 90px;
 }
 
@@ -104,13 +102,13 @@
 }
 
 .statistics {
-  background-color: #f9f9f9;
-  padding: 120px 20px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 120px 20px;
   border-bottom: 3.5px solid #cacaca;
 }
 
@@ -121,122 +119,98 @@
 
 .impact h2 {
   font-size: 40px;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .impact p {
-  font-size: 24px;
+  font-size: 23px;
 }
-
 
 .about-section {
   padding: 80px 0;
 }
 
 .about-content {
+  max-width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
-  margin: 0 auto;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
 }
 
-.about-text {
+.about-text, .mission-text, .contact-text {
   flex: 1;
-  /* font-family: "Poppins", sans-serif; CONSULTAR SI PUEDO PONER EL TEXTO CON LA MISMA FUENTE DE LOS OTROS*/
 }
 
 .about-text h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .about-text p {
-  margin-bottom: 30px;
   font-size: 16px;
-  color: black;
+  margin-bottom: 25px;
 }
 
-.about-link {
+.link {
   display: inline-block;
   background-color: #fac100;
   color: white;
   font-weight: bold;
   padding: 16px 30px;
   border-radius: 10px;
-  font-family: "Poppins", sans-serif;
   transition: background-color 0.3s ease;
 }
 
-.about-link:hover {
+.link:hover {
   background-color: #e0ac00;
 }
 
 .about-image {
-  flex: 1;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
-.mission-section {  /*VER LO QUE SE PUEDA AGRUPAR QUE COINCIDA EN ABOUT-SECTION*/
+.mission-section {
   background-color: #f9f9f9;
   padding: 80px 0;
 }
 
 .mission-content {
+  max-width: 1300px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
-  margin: 0 auto;
-  gap: 40px;
   flex-wrap: wrap;
-}
-
-.mission-text {
-  flex: 1;
-  /* font-family: "Poppins", sans-serif; CONSULTAR SI PUEDO PONER EL TEXTO CON LA MISMA FUENTE DE LOS OTROS*/
+  gap: 40px;
+  margin: 0 auto;
 }
 
 .mission-text h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .mission-text p {
-  margin-bottom: 30px;
   font-size: 16px;
-  color: black;
+  margin-bottom: 30px;
 }
 
-.mission-link {
-  display: inline-block;
-  background-color: #fac100;
-  color: white;
-  font-weight: bold;
-  padding: 16px 30px;
+.mission-text a {
   margin-top: 15px;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.mission-link:hover {
-  background-color: #e0ac00;
 }
 
 .mission-image {
-  flex: 1;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .icon-text {
@@ -246,34 +220,28 @@
 }
 
 .icon-text::before {
+  width: 20px;
+  height: 20px;
+  background-color: #fac100;
   content: "";
   position: absolute;
   left: 0;
   top: 2px;
-  width: 20px;
-  height: 20px;
-  background-color: #fac100;
   border-radius: 50%;
 }
 
 .contact-section {
   padding: 80px 0;
-  background-color: white;
 }
 
 .contact-content {
   max-width: 1300px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 80px;
-}
-
-.contact-text {
-  flex: 1;
-  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
 }
 
 .contact-text h2 {
@@ -303,28 +271,25 @@ form {
   padding: 12px;
   border: 1px solid black;
   border-radius: 3px;
-  font-family: "Poppins", sans-serif;
 }
 
 textarea {
   height: 100px;
   padding: 15px 40px;
+  align-content: center;
   border: 1px solid black;
   border-radius: 3px;
-  font-family: "Poppins", sans-serif;
-  align-content: center;
   resize: none;
 }
 
 .contact-button {
   background-color: #fac100;
   color: white;
-  border: none;
-  padding: 16px 30px;
-  border-radius: 10px;
   font-weight: bold;
-  width: fit-content;
-  font-family: "Poppins", sans-serif;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 10px;
+  align-self: flex-start;
   cursor: pointer;
 }
 
@@ -333,9 +298,9 @@ textarea {
 }
 
 .contact-image {
-  flex: 1;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .contact-image img {
@@ -348,15 +313,14 @@ textarea {
 .subscribe-section {
   background-color: #d9d9d9;
   padding: 80px 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .subscribe-content {
   max-width: 1300px;
+  position: relative;
+  text-align: center;
   padding: 20px 10px;
   margin: 0 auto;
-  text-align: center;
-  position: relative;
 }
 
 .subscribe-text {
@@ -370,17 +334,16 @@ textarea {
 }
 
 .subscribe-form {
+  width: 600px;
   display: flex;
+  position: relative;
   border: 2px solid #fac100;
   border-radius: 4px;
-  width: 600px;
   margin: 0 auto;
-  position: relative;
 }
 
 .subscribe-form input[type="email"] {
   background-color: #d9d9d9;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   flex: 1;
   padding: 15px;
@@ -389,11 +352,10 @@ textarea {
 }
 
 .subscribe-form button {
+  position: absolute;
   background-color: #fac100;
-  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: white;
-  position: absolute;
   right: 7px;
   top: 7px;
   padding: 8px 20px;
@@ -419,23 +381,22 @@ textarea {
 footer {
   background-color: #000;
   color: white;
-  font-family: "Poppins", sans-serif;
   padding: 60px 0 30px;
 }
 
 .footer-content {
   max-width: 1300px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .footer-info {
-  flex: 1;
   max-width: 400px;
+  flex: 1;
 }
 
 .footer-info img {
@@ -448,13 +409,11 @@ footer {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
 }
 
-.footer-info p, .footer-contact
-.footer-contact .address p {
+footer p,
+.footer-links ul li a, .footer-copy p {
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
 }
 
 .footer-links ul li {
@@ -462,8 +421,6 @@ footer {
 }
 
 .footer-links ul li a {
-  text-decoration: none;
-  font-size: 14px;
   transition: color 0.3s ease;
 }
 
@@ -478,7 +435,11 @@ footer {
 }
 
 .footer-contact p {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-contact .address {
+  margin-bottom: 17px;
 }
 
 .footer-contact .address p {
@@ -490,8 +451,4 @@ footer {
   text-align: center;
   padding-top: 40px;
   margin-top: 30px;
-}
-
-.footer-copy p {
-  font-size: 13px;
 }
