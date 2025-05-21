@@ -16,17 +16,18 @@ Restaurant To Go es una página web, replicada y diseñada como proyecto del Mó
 
 - HTML:
   Estructura general por secciones:
-  header: incluye la barra superior con logo, menú y contacto (icono de búsqueda y teléfono)
 
-  main: agrupa el contenido principal de la web dividido en distintas secciones:
-  hero-section: sección destacada con eslogan y una imagen principal
-  impact-section: estadísticas de impacto del restaurante en cifras
-  about-section: información general sobre el restaurante, incluyendo título, texto e imagen
-  mission-section: explicación de la misión del restaurante con contenido estructurado en título, texto e imagen
-  contact-section: formulario de contacto con campos para nombre, correo y mensaje
-  subscribe-section: formulario de suscripción para seguir las ofertas
+  - header: incluye la barra superior con logo, menú y contacto (icono de búsqueda y teléfono)
 
-  footer: ocupa la información de contacto, logo, enlaces y aviso de derechos de autor
+  - main: agrupa el contenido principal de la web dividido en distintas secciones:
+    hero-section: sección destacada con eslogan y una imagen principal
+    impact-section: estadísticas de impacto del restaurante en cifras
+    about-section: información general sobre el restaurante, incluyendo título, texto e imagen
+    mission-section: explicación de la misión del restaurante con contenido estructurado en título, texto e imagen
+    contact-section: formulario de contacto con campos para nombre, correo y mensaje
+    subscribe-section: formulario de suscripción para seguir las ofertas
+
+  - footer: ocupa la información de contacto, logo, enlaces y aviso de derechos de autor
 
 - CSS:
   Selectores utilizados:
