@@ -6,37 +6,28 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- INCLUIR RESPONSIVE -->
-
-    <!-- PREGUNTAR SI DEBO PONER COLOR A TODOS LOS FONDOS Y TODAS LAS LETRAS AUNQUE SEA PREDETERMINADOS
-        ¿ES CONVENIENTE DAR CLASE A HEADER, MAIN Y FOOTER?
-        ¿ESTÁ BIEN HABER PUESTO LAS ESTADÍSTICAS EN UN DIV?-->
-
-    <!-- ACTUALIZAR GIT Y GITHUB-->
-
-    <!-- AÑADIR README.MD -->
-
-    <title>Restaurant To Go - Calidad y sabor</title>
+    <title>Restaurant To Go - Flavor You Can Trust</title>
 </head>
 <body>
-    <header class="topbar">
-        <div class="logo">
-        <img src="Images/Logo.png" alt="restaurant logo">
-        </div>
-        <div class="menu">
-            <nav class="topnav">
-                <a href="#">HOME</a>
-                <a href="#">MENU</a>
-                <a href="#">SERVICES</a>
-                <a href="#">CONTACT US</a>
-            </nav>
-        </div>
-        <div class="icons">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="33"  height="33"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-            <span class="phone">
+    <header>
+        <div class="topbar">
+            <div class="logo">
+                <img src="Images/Logo.png" alt="restaurant logo">
+            </div>
+            <div class="menu">
+                <nav class="topnav">
+                    <a href="#">HOME</a>
+                    <a href="#">MENU</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">CONTACT US</a>
+                </nav>
+            </div>
+            <div class="icons">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="33"  height="33"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                <span class="phone">
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="33"  height="33"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg> +001-123-2344
-            </span>
+                </span>
+            </div>
         </div>
     </header>
 
@@ -44,8 +35,8 @@
         <section class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2>Get Delicious</h2>
-                    <h2>Food <span class="hero-highlighted">Instantly Delivery</span></h2>
+                    <h1>Get Delicious <br>
+                    Food <span class="hero-highlighted">Instantly Delivery</span></h1>
                     <p>Enjoy a wide variety of freshly prepared meals delivered straight to your door. From juicy burgers and crispy fries to fresh salads and hearty bowls, we bring the taste you love fast, fresh, and hassle-free.</p>
                 </div>
                 <div class="hero-image">
@@ -54,20 +45,24 @@
             </div>
         </section>
         
-        <div class="statistics">
-            <div class="impact">
+        <section class="impact-section">
+            <div class="impact-info">
                 <h2>180K+</h2>
-                <p>website visitor</p></div>
-            <div class="impact">
+                <p>website visitor</p>
+            </div>
+            <div class="impact-info">
                 <h2>1200+</h2>
-                <p>Daily Orders</p></div>
-            <div class="impact">
+                <p>Daily Orders</p>
+            </div>
+            <div class="impact-info">
                 <h2>120+</h2>
-                <p>Delivery Boy</p></div>
-            <div class="impact">
+                <p>Delivery Boy</p>
+            </div>
+            <div class="impact-info">
                 <h2>12+</h2>
-                <p>Years Experience</p></div>
-        </div>
+                <p>Years Experience</p>
+            </div>
+        </section>
 
         <section class="about-section">
             <div class="about-content">
@@ -92,7 +87,7 @@
                     <p class="icon-text">We believe in making food that's worth coming back for.</p>
                     <a href="#" class="link">Read More</a>
                 </div>
-                <div>
+                <div class="mission-image">
                     <img src="Images/Aboutsection-picture (1).png" alt="cook preparing kebab meat">
                 </div>
             </div>
@@ -174,12 +169,5 @@
             <p>Copyright &#169; 2025 Restaurantogo.com. All rights reserved.</p>
         </div>
     </footer>
-
-<!-- git add .
-git commit -m "Descripción del cambio"
-
-Y luego subes los cambios con:
-git push -->
-
 </body>
 </html>
