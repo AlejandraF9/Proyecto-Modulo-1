@@ -1,54 +1,54 @@
 # Restaurant To Go
 
-Restaurant To Go es una página web, replicada y diseñada como proyecto del Módulo 1 del Bootcamp Her-Tech Javascript. Representa un espacio web para un restaurante de comida rápida con servicio de entrega a domicilio.
+Restaurant To Go is a website, replicated and designed as a project of Module 1 of the Her-Tech Javascript Bootcamp. It represents a web space for a fast food restaurant with home delivery service.
 
-## Secciones principales:
+## Main sections:
 
-- Hero con eslogan e imagen destacada
-- Estadísticas del restaurante (impacto)
-- Sección "About Us"
-- Sección "Our Mission"
-- Formulario de contacto
-- Suscripción a ofertas
-- Footer con enlaces e información de contacto
+- Hero with slogan and featured image
+- Restaurant statistics (impact)
+- About Us’ section
+- Our Mission’ section
+- Contact form
+- Subscription to offers
+- Footer with links and contact information
 
-## Tecnologías Utilizadas:
+## Technologies Used:
 
 - HTML:
-  Estructura general por secciones:
+  General structure by sections:
 
-  - header: incluye la barra superior con logo, menú y contacto (icono de búsqueda y teléfono)
+  - header: includes the top bar with logo, menu and contact (search icon and telephone)
 
-  - main: agrupa el contenido principal de la web dividido en distintas secciones:
-    hero-section: sección destacada con eslogan y una imagen principal
-    impact-section: estadísticas de impacto del restaurante en cifras
-    about-section: información general sobre el restaurante, incluyendo título, texto e imagen
-    mission-section: explicación de la misión del restaurante con contenido estructurado en título, texto e imagen
-    contact-section: formulario de contacto con campos para nombre, correo y mensaje
-    subscribe-section: formulario de suscripción para seguir las ofertas
+  - main: groups the main content of the website divided into different sections:
+    hero-section: featured section with slogan and a main image
+    impact-section: statistics of the restaurant's impact in figures
+    about-section: general information about the restaurant, including title, text and image
+    mission-section: explanation of the restaurant's mission with structured content in title, text and image
+    contact-section: contact form with name, email and message fields
+    subscribe-section: subscription form to follow up the offers
 
-  - footer: ocupa la información de contacto, logo, enlaces y aviso de derechos de autor
+  - footer: holds contact information, logo, links and copyright notice
 
 - CSS:
-  Selectores utilizados:
+  Selectors used:
 
-  - Universales: \* para definir la fuente base del proyecto.
-  - De etiqueta: footer, form, textarea, para aplicar estilos generales según el tipo de elemento
-  - De clase: .topbar, .hero-text, .link, etc., para agrupar estilos semánticos
-  - Combinados: .topnav a, .footer-links ul li a para aplicar estilos a elementos dentro de clases específicas
-  - Agrupados: .about-text, .mission-text, .contact-text para evitar duplicación de reglas
+  - Universal: \* to define the base source of the project.
+  - Tag: footer, form, textarea, to apply general styles according to the type of element.
+  - Class: .topbar, .hero-text, .link, etc., to group semantic styles.
+  - Combined: .topnav a, .footer-links ul li a to apply styles to elements within specific classes
+  - Grouped: .about-text, .mission-text, .contact-text to avoid duplication of rules
 
-    Pseudoclases y pseudoelementos:
+    Pseudo-classes and pseudo-elements:
 
-  - :hover en enlaces (.link:hover, .topnav a:hover, .footer-links ul li a:hover) para efectos interactivos
-  - ::before en .icon-text::before para añadir decoraciones visuales (círculos amarillos)
+  - :hover on links (.link:hover, .topnav a:hover, .footer-links ul li a:hover) for interactive effects
+  - ::before in .icon-text::before to add visual decorations (yellow circles)
 
     Flexbox:
-    Se emplea display: flex en estructuras como:
+    Display: flex is used in structures such as:
 
-  - .topbar para el encabezado
-  - .hero-content, .about-content, .mission-content, .contact-content, .footer-content para distribuir el contenido
-  - Uso de propiedades como justify-content, align-items, gap, flex-wrap y flex: 1 para gestionar distribución y adaptación
+  - .topbar for the header
+  - .hero-content, .about-content, .mission-content, .contact-content, .footer-content to distribute content
+  - Use of properties such as justify-content, align-items, gap, flex-wrap and flex: 1 to manage layout and adaptation
 
 - Google Fonts (Poppins)
 
